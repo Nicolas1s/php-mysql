@@ -27,11 +27,12 @@ $recipes = [
     <h1>Affichage des recettes</h1>
     <ul>
         <?php foreach($recipes as $recipe): ?>
-            <li>
-                <h3></h3><?php  echo $recipe['title'] . '<br>' .
-                $recipe['recipe'] . '<br>' .
-                $recipe['author'] . '<br>';?>
-            </li>
+            
+                <h2><?php  echo $recipe['title']?></h2>
+                <p><?php echo $recipe['recipe']?> </p>
+                <p><?php echo $recipe['author']?> </p>
+                
+            
         <?php endforeach; ?>
     </ul>
 </body>
