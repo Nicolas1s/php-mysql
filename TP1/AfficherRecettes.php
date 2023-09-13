@@ -1,6 +1,5 @@
 <?php
 
-//validité d'une recette
 function isValidRecipe(array $recipe) : bool {
     if (array_key_exists('is_enabled', $recipe)) {
         $isEnabled = $recipe['is_enabled'];
@@ -10,52 +9,70 @@ function isValidRecipe(array $recipe) : bool {
     return $isEnabled;
 }
 
+
 // Déclaration du tableau des recettes
+
 $recipes = [
     [
         'title' => 'Cassoulet',
-        'recipe' => 'Etape 1 : des flageolets !',
+        'recipe' => '',
         'author' => 'mickael.andrieu@exemple.com',
         'enabled' => true,
     ],
     [  
         'title' => 'Escalope Milanaise',
-        'recipe' => 'Etape 1 : prenez une belle escalope',
+        'recipe' => '',
         'author' => 'mathieu.nebra@exemple.com',
         'enabled' => true,
     ],
 ];
 
+$users = [
+    [
+        'full_name' => 'Mickaël Andrieu',
+        'email' => 'mickael.andrieu@exemple.com',
+        'age' => 34,
+    ],
+    [
+        'full_name' => 'Mathieu Nebra',
+        'email' => 'mathieu.nebra@exemple.com',
+        'age' => 34,
+    ],
+];
 
 // Répond true !
-$isCassouletValid = isValidRecipe($Cassoulet);
+$isCassouletValid = isValidRecipe($recipes);
 // Répond true !
-$isEscalopeMilanaiseValid = isValidRecipe($EscalopeMilanaise);
+$isEscalopeMilanaiseValid = isValidRecipe($recipes);
 
 ?>
 
 <?php
 
-//récupérez les recettes valides
 function getRecipes(array $recipes) : array {
     $validRecipes = [];
     foreach($recipes as $recipe) {
-    if (isValidRecipe($recipe)) {
-    $validRecipes[] = $recipe;
-    }
+        if (isValidRecipe($recipe)) {
+            $validRecipes[] = $recipe;
+        }
     }
     return $validRecipes;
 
+
 }
+
 // construire l'affichage HTML des recettes
 foreach(getRecipes($recipes) as $recipe) {
-     echo $recipe['title']
+    //echo $recipe['title'];
+    //echo $recipe['recipe'];
+    //echo displayAuthor($recipe['author'], $users);
 }
 
 ?>
 
+
 <?php
-//affichez le nom de l'auteur
+
 function displayAuthor(string $authorEmail, array $users) : string
 {
     for ($i = 0; $i < count($users); $i++) {
@@ -67,7 +84,7 @@ function displayAuthor(string $authorEmail, array $users) : string
 }
 
 ?>
-
+ 
 <!DOCTYPE html>
 <html>
 <head>
@@ -80,9 +97,8 @@ function displayAuthor(string $authorEmail, array $users) : string
             
                 <h2><?php  echo $recipe['title']?></h2>
                 <p><?php echo $recipe['recipe']?> </p>
-                <p><?php echo $recipe['author']?> </p>
+                <p><?php echo displayAuthor($recipe['author'], $users)?> </p>
                 
-            
         <?php endforeach; ?>
     </ul>
 </body>
