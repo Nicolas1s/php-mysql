@@ -1,0 +1,77 @@
+[33mcommit af39a4f8b9ce7e9ee03785161bde6372d1f02496[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 11:46:51 2023 +0200
+
+    Implémentez un système de connexion
+
+[33mcommit 6c9d1b1c71ab7de52a96c7ad2c01d1ad8f5ede45[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 10:52:04 2023 +0200
+
+    Ajout d'une clé password dans le tableau  de variables.php
+
+[33mcommit c9711ca59b62fcfd4a60533a87476d5820264ddf[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 10:49:56 2023 +0200
+
+    Début du TD1
+
+[33mcommit bc3fe64bf2f3805e2f74d493f174bfa75be3f7a2[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:18:41 2023 +0200
+
+    Projet fil rouge
+
+[33mcommit a88966d936823e8fabed4298aaadfe51395ec4ca[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:15:44 2023 +0200
+
+    Organisez le code PHP en blocs
+
+[33mcommit 845ab37de2a1cbbb2bbb3926793db823f354d675[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:15:14 2023 +0200
+
+    Découpage d'une page web
+
+[33mcommit b1288fa0037ac6128a1849257a04da5227c3c900[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:14:26 2023 +0200
+
+    Erreurs courantes
+
+[33mcommit c2864888fd4225e429ca73858f81b1bee4392c1e[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:10:09 2023 +0200
+
+    Découpage d'une page web
+
+[33mcommit d9a797f19fc944b586e3f72c4a3d0ea794ca5485[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 13 08:08:04 2023 +0200
+
+    Les fonctions
+
+[33mcommit 276a61bbb7050dcd29fc0cee55eb222f4ea3cd6c[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Tue Sep 12 16:10:50 2023 +0200
+
+    Les tableaux associatifs
+
+[33mcommit ecf3ffd22f212b4ce85281135bc29382f2d5a3ec[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Tue Sep 12 16:00:17 2023 +0200
+
+    Les tableaux associatifs
+
+[33mcommit c376478be9cc536f7fe4e629e2d3443d51788424[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 6 11:58:48 2023 +0200
+
+    Afficher plusieurs recettes avec une boucle
+
+[33mcommit 9fbd2b315efdf45f301cc08ed29116ef5a2d2b59[m
+Author: Nicolas1s <115209939+Nicolas1s@users.noreply.github.com>
+Date:   Wed Sep 6 11:28:42 2023 +0200
+
+    Afficher plusieurs recettes avec une boucle
