@@ -24,8 +24,9 @@
 
         <!-- inclusion de l'entête du site -->
         <?php include_once('header.php'); ?>
-
+        
         <?php
+        
             if (
                 (!isset($_POST['email']) || !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL))
                 || (!isset($_POST['message']) || empty($_POST['message']))
@@ -35,6 +36,12 @@
                 return;
             }
         ?>
+        
+        <strong>Badaboum</strong>
+        <p><b>Message</b> : <strong>Badaboum</strong></p>
+        <p><b>Message</b> : <script>alert('Badaboum')</script></p>
+        <p><b>Message</b> : <?php echo htmlspecialchars($_POST['message']); ?> </p>
+        <p><b>Message</b> : &lt;strong&gt;Badaboum&lt;/strong&gt; ?></p>
 
     </div>
 
