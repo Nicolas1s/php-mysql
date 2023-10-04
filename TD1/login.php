@@ -4,7 +4,7 @@
 if (isset($_POST['email']) && isset($_POST['password'])) {
     foreach ($users as $user) {
         if ( $_POST['email'] === $user['email'] && $_POST['password'] === $user['password'] ) {
-            $loggedUser = [ 'email' => $user['email'], ];
+            $loggedUser = [ 'email' => $user['email'], ]; 
         } 
         else {
             $errorMessage = sprintf('Les informations envoyées ne permettent pas de
@@ -42,6 +42,6 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 <!-- Si utilisateur/trice bien connectée on affiche un message de succès -->
 <?php else: ?>
     <div class="alert alert-success" role="alert">
-        Bonjour <?php echo $loggedUser['email']; ?> et bienvenue sur le site !
+        Bonjour et bienvenue sur le site <?php echo $loggedUser['email']; ?> !
     </div>
 <?php endif; ?>
