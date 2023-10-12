@@ -41,7 +41,9 @@
         <!-- On affiche chaque recette une à une -->
         <?php foreach ($recipes as $recipe): ?>
             <p>
-                <?php echo $recipe['author']; ?>
+                <h3><?php echo $recipe['title']; ?></h3>
+                <?php echo $recipe['recipe']; ?>
+                <?php echo displayAuthor($recipe['author'], $users); ?>
             </p>
         <?php endforeach; ?>
 
